@@ -1,7 +1,12 @@
 // make.fun "Make the cutest picture" (cutest-picture-01) entry.
-// Two fluffy kittens cuddling on a knitted blanket, drawn by the agent itself:
-// the program copies the picture beside this file to /output/entry.png, creating
-// the output directory if it is missing, then reads the copy back to confirm it.
+// What the picture shows: a soft, shallow-depth-of-field close-up of two fluffy
+// blue-eyed kittens in cream and grey tabby fur, each wearing small yellow neck
+// ornaments, huddled together in a woven basket or nest, against a dark blurred
+// background. (The first draft of this comment called it a knitted blanket.)
+// This program is deterministic: no randomness, no network, no timestamps, no
+// clock. It copies the picture beside this file to /output/entry.png byte for
+// byte, creating the output directory when it is missing, then reads the copy
+// back to confirm it. Identical inputs always produce identical output bytes.
 //
 // Run it locally:
 //   MAKEFUN_OUTPUT_DIR=out node main.ts
